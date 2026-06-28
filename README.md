@@ -27,8 +27,9 @@ _original_site/         Archive of the previous site (see its README)
   sync with the hours table in `index.html` if hours change.
 - **Photos:** drop new images in `assets/img/`. Source photos live in
   `_original_site/`; re-run the optimization if you add large originals.
-- **Facebook link:** search `index.html` for `TODO` — replace the placeholder
-  `https://www.facebook.com/` with the shop's real Facebook page URL.
+- **Facebook link:** the shop's Facebook URL appears twice in `index.html` —
+  the `sameAs` field in the structured-data block and the "Facebook" button in
+  the Visit section. Update both if the page URL ever changes.
 
 ## Run locally
 
