@@ -1,0 +1,201 @@
+body { 
+	background-color: #b5a789;
+	font-family: "Times New Roman", Times, serif;
+	font-size: small;
+	margin: 0px;
+}
+
+#largecont {
+	width:auto;
+	height:auto;
+	max-width:90%;
+  border: solid 2px grey;
+  
+}
+
+#main {
+	background: #efe5d0 url(images/background.gif) top left;
+	font-size: 105%;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+  	min-height: 500px;
+}
+
+#sidebar {
+	background: #efe5d0 url(images/background.gif) bottom right;
+	font-size: 105%;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+}
+
+#footer {
+	background-color: #675c47;
+	color: #efe5d0;
+	text-align: center;
+	padding: 15px;
+	margin: 10px;
+	font-size: 90%;
+}
+
+#header {
+  
+  background: #efe5d0 url(back_bar_highedit.jpg) ;
+  background-size: 100% 120%;
+  background-repeat:no-repeat;
+  background-color: #675c47;
+	margin: 10px;
+	
+  padding: 10px;
+  padding-left: 25px;
+  height: 200px;
+}
+
+#header img {
+ position: absolute;
+ left: 100px;
+  top: 30px;
+  
+  
+}
+
+#header h1 {
+color: white;
+ position:absolute;
+right: 80px;
+top:140px;
+font-size: 400%;
+}
+
+#hours {
+	background: #efe5d0 url(images/background.gif) top left;
+	font-size: 105%;
+	padding: 15px;
+	margin: 0px 10px 10px 10px;
+  
+}
+
+h1 {
+	font-size: 120%;
+	color: #954b4b;
+}
+
+h2 {
+	color: #954b4b;
+}
+
+.slogan {
+	color: #954b4b;
+}
+
+.beanheading {
+	text-align: center;
+	line-height: 1.8em;
+}
+
+.beanheading img {
+	width: 60%;
+}
+
+a:link {
+	color: #b76666;
+	text-decoration: none;
+	border-bottom: thin dotted #b76666;
+}
+a:visited {
+	color: #675c47;
+	text-decoration: none;
+	border-bottom: thin dotted #675c47;
+}
+
+#sidebar {
+	float: right;
+	width: 180px;
+}
+
+#main {
+	margin-right: 230px;
+	margin-left: 240px;
+}
+
+#hours {
+	float: left;
+	width: 190px;
+}
+
+
+#footer {
+	clear: both;
+}
+
+#leftb {
+	float: center;
+	width: 33%;
+ text-align: center 
+}
+
+#centerb {
+	float: left;
+	width: 50%;
+  text-align: center
+}
+
+#rightb {
+	float: center;
+	width: 33%;
+  text-align: center
+  
+}
+
+#fb-like {
+	
+	float: left;
+  text-align: center
+  
+}
+
+/*
+#coupon {
+	display: none;
+	position: fixed;
+	top: 300px;
+	left: -90px;
+}
+
+#coupon img {
+	border: none;
+}
+#coupon a:link {
+	border: none;
+}
+#coupon a:visited {
+	border: none;
+}
+
+#content {
+	width: 800px;
+	margin: auto;
+}
+
+#award {
+	position: absolute;
+	top: 30px;
+	left: 365px;
+}
+*/
+
+#coupon {
+	display: none;
+}
+#award {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
