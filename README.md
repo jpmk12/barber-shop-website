@@ -22,9 +22,9 @@ _original_site/         Archive of the previous site (see its README)
 ## Editing common things
 
 - **Hours / prices / phone / address:** all in `index.html`. The opening-hours
-  logic for the "Open now" badge is also defined near the top of
-  `assets/js/main.js` (`OPEN_DAYS`, `OPEN_HOUR`, `CLOSE_HOUR`) — keep the two
-  in sync if hours change.
+  logic for the "Open now" badge is also defined in `assets/js/main.js` (the
+  `SCHEDULE` map, keyed by weekday with per-day open/close in 24h) — keep it in
+  sync with the hours table in `index.html` if hours change.
 - **Photos:** drop new images in `assets/img/`. Source photos live in
   `_original_site/`; re-run the optimization if you add large originals.
 - **Facebook link:** search `index.html` for `TODO` — replace the placeholder

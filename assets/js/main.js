@@ -25,10 +25,21 @@
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   /* ---- Shop hours (America/Chicago) ----
-     Open Tue–Fri 07:00–17:00. Computes the shop's local day & time so the
-     status is correct no matter where the visitor is. */
-  var OPEN_DAYS = { 2: 1, 3: 1, 4: 1, 5: 1 }; // Tue=2 ... Fri=5
-  var OPEN_HOUR = 7, CLOSE_HOUR = 17;
+     Open Tue–Thu 05:00–16:00, Fri 05:00–15:00 (24h). Computes the shop's
+     local day & time so the status is correct no matter where the visitor is.
+     Keyed by weekday: Sun=0 ... Sat=6. */
+  var SCHEDULE = {
+    2: { open: 5, close: 16 }, // Tuesday
+    3: { open: 5, close: 16 }, // Wednesday
+    4: { open: 5, close: 16 }, // Thursday
+    5: { open: 5, close: 15 }  // Friday
+  };
+
+  function fmtHour(h) {
+    var ampm = h >= 12 ? "p.m." : "a.m.";
+    var h12 = h % 12 || 12;
+    return h12 + ":00 " + ampm;
+  }
 
   function shopNow() {
     // Get current time in the shop's timezone via Intl, fall back to local.
@@ -51,14 +62,15 @@
 
   function computeStatus() {
     var now = shopNow();
-    var open = OPEN_DAYS[now.day] && now.hour >= OPEN_HOUR && now.hour < CLOSE_HOUR;
+    var today = SCHEDULE[now.day];
+    var open = today && now.hour >= today.open && now.hour < today.close;
     var label;
     if (open) {
-      label = "Open now &middot; until 5:00 p.m.";
-    } else if (OPEN_DAYS[now.day] && now.hour < OPEN_HOUR) {
-      label = "Closed &middot; opens today at 7:00 a.m.";
+      label = "Open now &middot; until " + fmtHour(today.close);
+    } else if (today && now.hour < today.open) {
+      label = "Closed &middot; opens today at " + fmtHour(today.open);
     } else {
-      label = "Closed &middot; open Tue–Fri, 7am–5pm";
+      label = "Closed &middot; open Tue–Fri, 5am";
     }
     return { open: open, label: label, day: now.day };
   }
