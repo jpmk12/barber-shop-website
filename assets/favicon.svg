@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Barber pole">
   <defs>
     <!-- diagonal red / white / blue spiral stripes -->
-    <pattern id="bp" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(62)">
-      <rect width="16" height="16" fill="#f7f2ea"/>
-      <rect width="16" height="4" y="0" fill="#c0392f"/>
-      <rect width="16" height="4" y="8" fill="#21548a"/>
+    <pattern id="bp" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(60)">
+      <rect width="12" height="12" fill="#f7f2ea"/>
+      <rect width="12" height="3" y="0" fill="#c0392f"/>
+      <rect width="12" height="3" y="6" fill="#21548a"/>
     </pattern>
     <clipPath id="tube"><rect x="11" y="8.5" width="10" height="15"/></clipPath>
     <!-- chrome sheen for caps -->

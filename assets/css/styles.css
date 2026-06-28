@@ -200,8 +200,8 @@ h1, h2, h3 {
 .hours-photo { margin: 0; }
 .hours-photo img {
   border-radius: var(--radius); box-shadow: var(--shadow);
-  width: 100%; height: auto; max-height: 520px;
-  object-fit: cover; object-position: center 35%;
+  width: 100%; height: auto; max-height: 460px;
+  object-fit: cover; object-position: center 60%;
 }
 .hours-photo figcaption {
   margin-top: .6em; font-family: var(--font-head); text-transform: uppercase;
