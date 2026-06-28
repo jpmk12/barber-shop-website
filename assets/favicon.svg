@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Barber pole">
+  <defs>
+    <clipPath id="r"><rect x="9" y="4" width="14" height="24" rx="7"/></clipPath>
+  </defs>
+  <rect width="32" height="32" rx="6" fill="#3a3228"/>
+  <g clip-path="url(#r)">
+    <rect x="9" y="4" width="14" height="24" fill="#f4ece0"/>
+    <g fill="#9e3a36">
+      <polygon points="3,4 11,4 -1,16 -1,8"/>
+      <polygon points="11,4 19,4 7,16 -1,16"/>
+      <polygon points="19,4 27,4 15,16 7,16"/>
+      <polygon points="27,4 35,4 23,16 15,16"/>
+      <polygon points="35,8 35,16 23,28 15,28"/>
+      <polygon points="23,28 31,28 35,24 35,28" />
+    </g>
+    <g fill="#2f6fb0" opacity="0.0"/>
+  </g>
+  <rect x="9" y="4" width="14" height="24" rx="7" fill="none" stroke="#cdbfa6" stroke-width="1.5"/>
+  <circle cx="16" cy="4" r="3" fill="#d9cdb5"/>
+  <circle cx="16" cy="28" r="3" fill="#d9cdb5"/>
+</svg>
